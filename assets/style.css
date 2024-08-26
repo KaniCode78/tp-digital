@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+:root {
+    --primario: #9bc0d9;
+    --primarioOscuro: #293241;
+    --secundario: #dffbfc;
+    --secundarioOscuro: #3d5b81;
+    --comodin: #ee6b4d;
+    --blanco: #fff;
+    --negro: #000;
+
+    --sobraTexto: rgba(255, 255, 255, .75);
+    --fondoBody: #DAEAF0;
+    --sombraBotones: #FFF23D;
+    --sombraCard: #EBEBEB;
+
+    --fuentePrincipal: "Lato", sans-serif;
+    --fuenteSecundaria: "Ubuntu", sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/**globales**/
+
+
+body {
+    background-color: var(--fondoBody);
+    font-size: 1.6rem;
+    line-height: 2;
+    /**labasedelafuentainterlinbeado**/
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    min-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuenteSecundaria);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/**utilidades**/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar__texto {
+    text-align: center;
+}
+
+
+/**inician estilos**/
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
