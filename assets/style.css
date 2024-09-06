@@ -112,7 +112,7 @@ a {
     font-size: 4rem;
     text-align: center;
     font-family: var(--fuente);
-    font-weight: lighter;
+    font-weight:400;
 }
 
 .bloque1 h2 {
@@ -122,6 +122,15 @@ a {
     font-family: var(--fuente);
     font-weight: lighter;
 }
+
+.bloque1 p {
+    border: 2px solid #FFF23D;
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--fuente);
+    font-weight: lighter;
+}
+
 
 .bloque2 {
     display: flex;
