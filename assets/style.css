@@ -7,7 +7,7 @@
     --primario: #9bc0d9;
     --primarioOscuro: #293241;
     --secundario: #dffbfc;
-    --secundarioOscuro: #3d5b81;
+    --secundarioOscuro: #705F7D;
    
     --blanco: #fff;
     --negro: #000;
@@ -169,6 +169,12 @@ li {
     border-color: 3px solid coral;
     box-shadow: 0 0 10px var(--sombraCard);
 }
+
+.bloque2 a:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 
 /*bloque3*/
 
@@ -363,13 +369,13 @@ li {
 
 .bloque5 p{
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
     font-family: var(--fuente);
     font-weight: 400;
 }
 
 .bloque5 img{
-    width: 80%;
+    width: 70%;
     height: auto;
     object-fit: contain;
     margin: 0 auto;
