@@ -105,12 +105,12 @@ li {
 
 
 .bloque1 .banner {
-    width: 50%;
+    width: 70%;
     height: auto;
     object-fit: contain;
-
     display: flex;
     margin: 0 auto;
+    padding: 0;
 }
 
 .bloque1 .foto {
@@ -384,17 +384,21 @@ li {
 
 
 
-
-
-
-
-
-
-
 /* Estilos para pantallas grandes */
 @media (min-width: 768px) {
+    body{
+        font-size: 18px;
+    }
+    
+    .contenedor h1{
+        font-size: 8rem;
+    }
+    
     .contenedor {
         padding: 20px;
         font-size: 18px;
+        line-height: 1.5;
     }
+
+    
 }
