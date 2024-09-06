@@ -8,13 +8,13 @@
     --primarioOscuro: #293241;
     --secundario: #dffbfc;
     --secundarioOscuro: #3d5b81;
-    --comodin: #ee6b4d;
+   
     --blanco: #fff;
     --negro: #000;
 
     --sobraTexto: rgba(255, 255, 255, .75);
     --fondoBody: #DAEAF0;
-    --sombraBotones: #FFF23D;
+
     --sombraCard: #EBEBEB;
 
 
@@ -66,6 +66,7 @@ li {
     padding-top: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-bottom: 2rem;
     /*centrado de con*/
 }
 
@@ -107,7 +108,7 @@ li {
     width: 50%;
     height: auto;
     object-fit: contain;
-    border: 2px solid #FFF23D;
+
     display: flex;
     margin: 0 auto;
 }
@@ -116,14 +117,14 @@ li {
     width: 40%;
     height: auto;
     object-fit: contain;
-    border: 2px solid #FFF23D;
+    box-shadow: 0 0 10px var(--sombraCard);
     display: flex;
     margin: 0 auto;
     border-radius: 50%;
 }
 
 .bloque1 h1 {
-    border: 2px solid #FFF23D;
+
     font-size: 3rem;
     text-align: center;
     font-family: var(--fuente);
@@ -131,7 +132,7 @@ li {
 }
 
 .bloque1 h2 {
-    border: 2px solid #FFF23D;
+
     font-size: 2.5rem;
     text-align: center;
     font-family: var(--fuente);
@@ -139,7 +140,7 @@ li {
 }
 
 .bloque1 p {
-    border: 2px solid #FFF23D;
+
     font-size: 1.5rem;
     text-align: center;
     font-family: var(--fuente);
@@ -153,7 +154,7 @@ li {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    border: 2px solid #FFF23D;
+
 
 }
 
@@ -188,18 +189,19 @@ li {
 /*bloque4*/
 
 
-.bloque4 span{
+.bloque4 span {
     font-family: var(--fuente);
-    font-size: 1rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
 }
 
-.bloque4 .btn{
-   padding-top: 1rem;
-   padding-bottom: 1rem;
+.bloque4 .btn {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
- /* Estilos del whatsapp */
- .whatsapp-button {
+/* Estilos del whatsapp */
+.whatsapp-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,7 +212,7 @@ li {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    width: fit-content;
+    width: 100%;
 }
 
 .whatsapp-button:hover {
@@ -222,8 +224,8 @@ li {
     font-size: 1.5rem;
 }
 
-  /* Estilos del botón */
-  .facebook-button {
+/* Estilos del botón */
+.facebook-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,7 +236,7 @@ li {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    width: fit-content;
+    width: 100%;
 }
 
 .facebook-button:hover {
@@ -246,8 +248,8 @@ li {
     font-size: 1.5rem;
 }
 
-  /* Estilos del botón */
-  .instagram-button {
+/* Estilos del botón */
+.instagram-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,7 +260,7 @@ li {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    width: fit-content;
+    width: 100%;
 }
 
 .instagram-button:hover {
@@ -270,8 +272,8 @@ li {
     font-size: 1.5rem;
 }
 
- /* Estilos del botón */
- .tiktok-button {
+/* Estilos del botón tiktok */
+.tiktok-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,7 +284,7 @@ li {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    width: fit-content;
+    width: 100%;
 }
 
 .tiktok-button:hover {
@@ -294,33 +296,8 @@ li {
     font-size: 1.5rem;
 }
 
-    /* Estilos del botón */
-    .contact-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 0 10px var(--sombraCard);
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-        width: fit-content;
-    }
-
-    .contact-button:hover {
-        background-color: #218838;
-    }
-
-    .contact-button i {
-        margin-right: 10px;
-        font-size: 1.5rem;
-    }
-
-
-  /* Estilos del botón */
-  .share-button {
+/* Estilos del botón contacto */
+.contact-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -331,7 +308,32 @@ li {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    width: fit-content;
+    width: 100%;
+}
+
+.contact-button:hover {
+    background-color: #218838;
+}
+
+.contact-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+
+/* Estilos del botón compartir */
+.share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .share-button:hover {
@@ -342,6 +344,46 @@ li {
     margin-right: 10px;
     font-size: 1.5rem;
 }
+
+
+.bloque5{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.bloque5 h3{
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--fuente);
+    font-weight: 500;
+}
+
+.bloque5 p{
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: var(--fuente);
+    font-weight: 400;
+}
+
+.bloque5 img{
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos para pantallas grandes */
 @media (min-width: 768px) {
