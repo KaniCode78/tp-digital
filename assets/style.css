@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
 :root {
+    --fuente: 'Montserrat', sans-serif;
     --primario: #9bc0d9;
     --primarioOscuro: #293241;
     --secundario: #dffbfc;
@@ -16,8 +17,6 @@
     --sombraBotones: #FFF23D;
     --sombraCard: #EBEBEB;
 
-    --fuentePrincipal: "Lato", sans-serif;
-    --fuenteSecundaria: "Ubuntu", sans-serif;
 
 }
 
@@ -36,59 +35,27 @@ html {
 
 
 body {
-    background-color: var(--fondoBody);
-    font-size: 1.6rem;
+    background-color: var(--secundarioOscuro);
     line-height: 2;
     /**labasedelafuentainterlinbeado**/
+    font-size: clamp(14px, 4vw, 20px);
+
 }
 
-p {
-    font-size: 1.8rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 a {
     text-decoration: none;
 }
 
-img {
+/* img {
     min-width: 100%;
-}
+} */
 
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+    /*centrado de con*/
 }
-
-h1,
-h2,
-h3 {
-    text-align: center;
-    color: var(--secundario);
-    font-family: var(--fuenteSecundaria);
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-h3 {
-    font-size: 2.4rem;
-}
-
-p {
-    font-size: 2rem;
-}
-
-ul{
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 
 /**utilidades**/
 
@@ -100,17 +67,116 @@ ul{
     padding: 0;
 }
 
-.centrar__texto {
-    text-align: center;
-}
-
-
 /**inician estilos**/
 
-.box {
+.card-principal {
+    border: 2px solid #FFF23D;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
+    align-items: center;
+    height: 400px;
+    height: auto;
 }
 
+.bloque1 {
+    padding-top: 2rem;
+}
+
+
+
+.bloque1 .banner {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #FFF23D;
+    display: flex;
+    margin: 0 auto;
+}
+
+.bloque1 .foto {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #FFF23D;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.bloque1 h1 {
+    border: 2px solid #FFF23D;
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--fuente);
+    font-weight: lighter;
+}
+
+.bloque1 h2 {
+    border: 2px solid #FFF23D;
+    font-size: 3rem;
+    text-align: center;
+    font-family: var(--fuente);
+    font-weight: lighter;
+}
+
+.bloque2 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border: 2px solid #FFF23D;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.bloque2 img {
+    width: 20%;
+    height: auto;
+    border: 2px solid #FFF23D;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+
+
+
+/* .card-principal {
+    background-color: var(--primarioOscuro);
+    color: var(--negro);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    border-color: 3px solid coral;
+    box-shadow: 0 0 10px var(--sombraCard);
+    width: 400px;
+    height: 900px;
+} */
+
+/* .card-principal img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
+} */
+
+/* .card-principal .foto{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card-principal img{
+    
+    box-shadow: 0 0 10px var(--sombraCard);
+    border-image: linear-gradient(to right, var(--primario) 0%, var(--secundario) 100%);
+} */
+/* Estilos por defecto para pantallas pequeñas */
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .box {
+        padding: 20px;
+        font-size: 18px;
+    }
+}
