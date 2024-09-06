@@ -386,19 +386,29 @@ li {
 
 /* Estilos para pantallas grandes */
 @media (min-width: 768px) {
-    body{
-        font-size: 18px;
-    }
+    
     
     .contenedor h1{
         font-size: 8rem;
     }
+
+    .contenedor h2{
+        font-size: 5rem;
+    }
+
+    .contenedor p{
+        font-size: 3rem;
+    }
     
     .contenedor {
-        padding: 20px;
+        padding-left: 4rem;
+        padding-right: 4rem;
         font-size: 18px;
         line-height: 1.5;
     }
 
-    
+.bloque3  ul, li {
+    padding-left: 3rem;
+    font-size: 3rem;
+}
 }
