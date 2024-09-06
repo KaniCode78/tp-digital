@@ -39,6 +39,7 @@ body {
     line-height: 2;
     /**labasedelafuentainterlinbeado**/
     font-size: clamp(14px, 4vw, 20px);
+    color: white;
 
 }
 
@@ -120,33 +121,37 @@ a {
     font-size: 3rem;
     text-align: center;
     font-family: var(--fuente);
-    font-weight: lighter;
+    font-weight:400;
 }
 
 .bloque1 p {
     border: 2px solid #FFF23D;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     font-family: var(--fuente);
-    font-weight: lighter;
+    font-weight:400;
 }
 
 
 .bloque2 {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    border: 2px solid #FFF23D;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border: 2px solid #FFF23D;
+    
 }
 
-.bloque2 img {
+.bloque2 .iconos {
     width: 50%;
     height: auto;
-    border: 2px solid #FFF23D;
-    margin: 0 auto;
     object-fit: contain;
+    border: 2px solid #FFF23D;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: .5rem;
 }
 
 
