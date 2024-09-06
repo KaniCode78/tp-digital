@@ -36,7 +36,7 @@ html {
 
 body {
     background-color: var(--secundarioOscuro);
-    line-height: 2;
+    line-height: 1;
     /**labasedelafuentainterlinbeado**/
     font-size: clamp(14px, 4vw, 20px);
     color: white;
@@ -48,6 +48,14 @@ a {
     text-decoration: none;
 }
 
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 /* img {
     min-width: 100%;
 } */
@@ -55,6 +63,9 @@ a {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     /*centrado de con*/
 }
 
@@ -71,7 +82,7 @@ a {
 /**inician estilos**/
 
 .card-principal {
-    border: 2px solid #FFF23D;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -81,6 +92,9 @@ a {
     height: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+    border-color: 3px solid coral;
+    box-shadow: 0 0 10px var(--sombraCard);
+    border-radius: 28px;
 }
 
 .bloque1 {
@@ -99,7 +113,7 @@ a {
 }
 
 .bloque1 .foto {
-    width: 30%;
+    width: 40%;
     height: auto;
     object-fit: contain;
     border: 2px solid #FFF23D;
@@ -110,18 +124,18 @@ a {
 
 .bloque1 h1 {
     border: 2px solid #FFF23D;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     font-family: var(--fuente);
-    font-weight:400;
+    font-weight: 500;
 }
 
 .bloque1 h2 {
     border: 2px solid #FFF23D;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     font-family: var(--fuente);
-    font-weight:400;
+    font-weight: 500;
 }
 
 .bloque1 p {
@@ -129,7 +143,7 @@ a {
     font-size: 1.5rem;
     text-align: center;
     font-family: var(--fuente);
-    font-weight:400;
+    font-weight: 400;
 }
 
 
@@ -140,58 +154,198 @@ a {
     flex-wrap: nowrap;
     flex-direction: row;
     border: 2px solid #FFF23D;
-    
+
 }
 
 .bloque2 .iconos {
     width: 50%;
     height: auto;
     object-fit: contain;
-    border: 2px solid #FFF23D;
     display: flex;
     margin: 0 auto;
     border-radius: 50%;
     padding: .5rem;
-}
-
-
-
-
-/* .card-principal {
-    background-color: var(--primarioOscuro);
-    color: var(--negro);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border-radius: 10px;
     border-color: 3px solid coral;
     box-shadow: 0 0 10px var(--sombraCard);
-    width: 400px;
-    height: 900px;
-} */
-
-/* .card-principal img{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-
-} */
-
-/* .card-principal .foto{
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
 }
 
-.card-principal img{
-    
+/*bloque3*/
+
+.bloque3 p {
+    font-family: var(--fuente);
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.bloque3 ul,
+li {
+    font-family: var(--fuente);
+    list-style-type: disc;
+    padding-left: 2rem;
+    line-height: 1.5;
+}
+
+/*bloque4*/
+
+
+.bloque4 span{
+    font-family: var(--fuente);
+    font-size: 1rem;
+}
+
+.bloque4 .btn{
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+ /* Estilos del whatsapp */
+ .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 0 10px var(--sombraCard);
-    border-image: linear-gradient(to right, var(--primario) 0%, var(--secundario) 100%);
-} */
-/* Estilos por defecto para pantallas pequeñas */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBE56;
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+  /* Estilos del botón */
+  .facebook-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.facebook-button:hover {
+    background-color: #155dbb;
+}
+
+.facebook-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+  /* Estilos del botón */
+  .instagram-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.instagram-button:hover {
+    background-color: #bc2a8d;
+}
+
+.instagram-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+ /* Estilos del botón */
+ .tiktok-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.tiktok-button:hover {
+    background-color: #333333;
+}
+
+.tiktok-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+    /* Estilos del botón */
+    .contact-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px var(--sombraCard);
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        width: fit-content;
+    }
+
+    .contact-button:hover {
+        background-color: #218838;
+    }
+
+    .contact-button i {
+        margin-right: 10px;
+        font-size: 1.5rem;
+    }
+
+
+  /* Estilos del botón */
+  .share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--sombraCard);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.share-button:hover {
+    background-color: #0056b3;
+}
+
+.share-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
 
 /* Estilos para pantallas grandes */
 @media (min-width: 768px) {
-    .box {
+    .contenedor {
         padding: 20px;
         font-size: 18px;
     }
