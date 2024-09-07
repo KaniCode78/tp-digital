@@ -254,8 +254,8 @@ li {
     font-size: 1.5rem;
 }
 
-/* Estilos del botón */
-.instagram-button {
+/* Estilos del botón linkedin*/
+.linkedin-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,11 +269,11 @@ li {
     width: 100%;
 }
 
-.instagram-button:hover {
+.linkedin-button:hover {
     background-color: #bc2a8d;
 }
 
-.instagram-button i {
+.linkedin-button i {
     margin-right: 10px;
     font-size: 1.5rem;
 }
